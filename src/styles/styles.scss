@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+//import global themes
+
+//import directories
+@import "./base/base-dir";
+@import './pages/pages-dir';
+@import './modules/modules-dir';
+@import './helpers/helpers-dir';
+@import "./vendors/vendors-dir.scss";
+
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

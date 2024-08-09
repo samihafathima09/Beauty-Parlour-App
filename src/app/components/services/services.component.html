@@ -1,0 +1,26 @@
+<app-navbar-component></app-navbar-component>
+<div class="container-service">
+  <div class="row">
+    <p class="service-title">Our Services:</p>
+    <div class="card-center">
+      <mat-card *ngFor="let service of services">
+          <mat-toolbar-row style="height: 100%">
+            <mat-card-header>
+              <mat-card-title>{{service.serviceTitle}}</mat-card-title>
+              <mat-card-subtitle>{{service.serviceSubTitle}}</mat-card-subtitle>
+            </mat-card-header>
+            <div>
+              <img src="./assets/images/{{service.serviceImage}}" alt="image" class="imgSize">
+            </div>
+            <mat-card-content>{{service.serviceDescription}}</mat-card-content>
+
+            </mat-toolbar-row>
+          <div>
+          </div>
+        <mat-card-content></mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+</div>
+<app-footer-component></app-footer-component>
